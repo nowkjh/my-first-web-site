@@ -7,6 +7,7 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+
   <input type="button" value="night" onclick="
     document.querySelector('body').style.backgroundColor='black';
     document.querySelector('body').style.color='white';
@@ -15,6 +16,38 @@
     document.querySelector('body').style.backgroundColor='white';
     document.querySelector('body').style.color='black';
   ">
+
+
+
+  <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value==='night'){
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      this.value='day';
+
+    var alist = document.querySelectorAll('a');
+    var i =0;
+    while (i<alist.length) {
+      alist[i].style.color='powderblue';
+      i=i+1;
+  }
+
+   } else{
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value='night';
+
+      var alist = document.querySelectorAll('a');
+      var i =0;
+      while (i<alist.length) {
+        alist[i].style.color='blue';
+        i=i+1;
+    }
+  }
+      ">
+
+
     <div id="grid">
   <ol>
     <li><a href="1.html"> HTML</a></li>
@@ -29,5 +62,34 @@
   </div>
     </div>
   <p> 따로 link 만들 예정</p>
+//분리안하면 위아래 같이 안됨 html은 처음것만 인식//
+  <input id="night_day2" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(document.querySelector('#night_day2').value==='night'){
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      document.querySelector('#night_day2').value='day';
+
+      var alist = document.querySelectorAll('a');
+      var i =0;
+      while (i<alist.length) {
+        alist[i].style.color='powderblue';
+        i=i+1;
+    }
+
+   } else{
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      document.querySelector('#night_day2').value='night';
+
+      var alist = document.querySelectorAll('a');
+      var i =0;
+      while (i<alist.length) {
+        alist[i].style.color='blue';
+        i=i+1;
+    }
+    }
+      ">
+
 </body>
 </html>
