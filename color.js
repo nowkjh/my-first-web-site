@@ -1,9 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<title>WEB1-html</title>
-<meta charset="utf-8">
-<script>
 var Links= {
   setcolor: function(color){
     var alist = document.querySelectorAll('a');
@@ -41,35 +35,3 @@ var Body = {
     Links.setcolor('blue');
     }
   }
-</script>
-</head>
-<body>
-  <h1><a href="index.html">WEB</a></h1>
-
-  <input type="button" value="night" onclick="
-      NightDayHandler(this);
-      ">
-
-  <input type="button" value="night" onclick="
-      NightDayHandler(this);
-          ">
-
-
-    <div id="grid">
-  <ol>
-    <li><a href="1.html"> HTML</a></li>
-    <li><a href="2.html"> CSS</a></li>
-    <li><a href="3.html"> JAVASCRIPT</a></li>
-  </ol>
-
-  <div id="article">
-  <li>excel로 따로 작성 중</li>
-  <h2>JavaScript</h2>
-
-  </div>
-    </div>
-  <p> 따로 link 만들 예정</p>
-
-
-</body>
-</html>
